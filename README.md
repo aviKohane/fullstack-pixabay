@@ -17,7 +17,8 @@ The app displays images in a **3x3 grid** with pagination and supports category 
    cd server
 
 2. Install dependencies
-npm install
+   ```bash
+   npm install
 
 3. Create .env file
 
@@ -27,7 +28,8 @@ PIXABAY_KEY=25540812-faf2b76d586c1787d2dd02736
 PORT=4000
 
 4. Run the server
-npm run dev
+   ```bash
+   npm run dev
 
 
 Server will start at:
