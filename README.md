@@ -1,19 +1,20 @@
-Fullstack Pixabay Assignment
-📌 Overview
+# 📸 Fullstack Pixabay Assignment
 
 This is a fullstack application built with:
 
-Backend: Node.js + Express
+- **Backend**: Node.js + Express  
+- **Frontend**: React + Redux (Vite)  
+- **API**: [Pixabay API](https://pixabay.com/api/docs/)
 
-Frontend: React + Redux (Vite)
+The app displays images in a **3x3 grid** with pagination and supports category selection and details view.
 
-API: Pixabay API
+---
 
-The app displays images in a 3x3 grid with pagination and supports category selection and details view.
+## ⚙️ Backend Setup
 
-⚙️ Backend Setup
-1. Navigate to the server
-cd server
+1. Navigate to the server  
+   ```bash
+   cd server
 
 2. Install dependencies
 npm install
