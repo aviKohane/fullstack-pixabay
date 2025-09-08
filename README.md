@@ -81,7 +81,7 @@ The frontend is built with **React + Redux Toolkit** using **Vite**.
 
 ---
 
-## ðŸš€ Tech Stack
+## Tech Stack
 
 - Node.js / Express  
 - React + Redux Toolkit  
