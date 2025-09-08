@@ -6,7 +6,7 @@ This is a fullstack application built with:
 - **Frontend**: React + Redux (Vite)  
 - **API**: [Pixabay API](https://pixabay.com/api/docs/)
 
-The app displays images in a **3Ã—3 grid** with pagination and supports category selection and details view.
+The app displays images in a **3x3 grid** with pagination and supports category selection and details view.
 
 ---
 
