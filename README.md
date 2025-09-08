@@ -1,4 +1,4 @@
-# 📸 Fullstack Pixabay Assignment
+# Fullstack Pixabay Assignment
 
 This is a fullstack application built with:
 
@@ -6,56 +6,85 @@ This is a fullstack application built with:
 - **Frontend**: React + Redux (Vite)  
 - **API**: [Pixabay API](https://pixabay.com/api/docs/)
 
-The app displays images in a **3x3 grid** with pagination and supports category selection and details view.
+The app displays images in a **3Ã—3 grid** with pagination and supports category selection and details view.
 
 ---
 
-## ⚙️ Backend Setup
+## Backend Setup
 
 1. Navigate to the server  
    ```bash
    cd server
+   ```
 
-2. Install dependencies
+2. Install dependencies  
    ```bash
    npm install
+   ```
 
-3. Create .env file
+3. Create `.env` file  
+   In `server/.env`:
+   ```env
+   PIXABAY_KEY=25540812-faf2b76d586c1787d2dd02736
+   PORT=4000
+   ```
 
-In server/.env:
-
-PIXABAY_KEY=25540812-faf2b76d586c1787d2dd02736
-PORT=4000
-
-4. Run the server
+4. Run the server  
    ```bash
    npm run dev
+   ```
 
+Server will start at [http://localhost:4000](http://localhost:4000)
 
-Server will start at:
-👉 http://localhost:4000
+---
 
-Available endpoints
+## Available Endpoints
 
-Health check: GET /health
+- **Health check**  
+  ```http
+  GET /health
+  ```
 
-Fetch images:
+- **Fetch images**  
+  ```http
+  GET /api/images?category=sports&page=1&perPage=9
+  ```
 
-GET /api/images?category=sports&page=1&perPage=9
+---
 
-🎨 Frontend Setup (coming next)
+## Frontend Setup
 
-Frontend is scaffolded with React + Redux Toolkit (Vite).
-Setup instructions will be added once the frontend is connected to the backend.
+The frontend is built with **React + Redux Toolkit** using **Vite**.
 
-🚀 Tech Stack
+1. Navigate to the client  
+   ```bash
+   cd client
+   ```
 
-Node.js / Express
+2. Install dependencies  
+   ```bash
+   npm install
+   ```
 
-React + Redux Toolkit
+3. (Optional) Configure API base URL  
+   By default the app calls `http://localhost:4000`.  
+   If you need to change it, create `client/.env` with:
+   ```env
+   VITE_API_URL=http://localhost:4000
+   ```
 
-Axios
+4. Run the dev server  
+   ```bash
+   npm run dev
+   ```
+   Open the URL shown by Vite (usually http://localhost:5173).
 
-Vite
+---
 
-Pixabay API
+## ðŸš€ Tech Stack
+
+- Node.js / Express  
+- React + Redux Toolkit  
+- Axios  
+- Vite  
+- Pixabay API  
